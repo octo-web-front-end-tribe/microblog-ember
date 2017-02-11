@@ -1,17 +1,17 @@
 import { expect } from 'chai';
-import { describeModel, it } from 'ember-mocha';
+import { describe, it } from 'mocha';
+import { setupModelTest } from 'ember-mocha';
 
-describeModel(
-  'message',
-  'Unit | Model | message',
-  {
-    // Specify the other units that are required for this test.
-      needs: []
-  },
-  function() {
+describe('Unit | Model | message', function () {
+
+    setupModelTest('message', {
+      // Specify the other units that are required for this test.
+      // needs: ['controller:foo']
+    });
+
     // Replace this with your real tests.
-    it('exists', function() {
-      let model = this.subject();
+    it('exists', function () {
+      const model = this.subject();
       // var store = this.store();
       expect(model).to.be.ok;
     });
