@@ -29,6 +29,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.apiNamespace = 'api';
   }
 
   if (environment === 'test') {
@@ -40,11 +41,14 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+
+    ENV.APP.apiNamespace = 'api';
   }
 
   if (environment === 'production') {
-
+    ENV.APP.apiHost = 'https://skool-microblog.herokuapp.com';
+    ENV.APP.apiNamespace = '';
   }
 
   return ENV;
-}
+};
