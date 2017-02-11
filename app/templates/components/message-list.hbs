@@ -1,11 +1,9 @@
 <div class="message-list">
-  <div class="message-list__list">
-    <ul>
-      {{#each messages as |message|}}
-        <li>
-          {{message-item message}}
-        </li>
-      {{/each}}
-    </ul>
-  </div>
+  <ul class="message-list__list">
+    {{#each messages as |message|}}
+      <li class="message-list__item">
+        {{message-item message}}
+      </li>
+    {{/each}}
+  </ul>
 </div>

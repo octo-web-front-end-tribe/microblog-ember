@@ -1,0 +1,16 @@
+.message-list {
+  background-color: #ffffff;
+}
+
+.message-list__list {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #e1e8ed;
+  border-bottom: none;
+}
+
+.message-list__item {
+  list-style-type: none;
+  padding: 0;
+  border-bottom: 1px solid #e1e8ed;
+}
