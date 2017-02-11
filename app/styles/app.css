@@ -1,9 +1,15 @@
+@import './components/message-input.css';
 @import './components/message-item.css';
 @import './components/message-list.css';
 
 body {
+  font-size: 14px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #f5f8fa;
+}
+
+*:focus {
+  outline: none;
 }
 
 .app {

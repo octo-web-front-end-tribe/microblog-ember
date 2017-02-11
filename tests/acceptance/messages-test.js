@@ -34,4 +34,15 @@ describe('basic acceptance test', function() {
       findWithAssert('.message-list');
     });
   });
+
+  it('should render the message input', function () {
+    // when
+    visit('/');
+
+    // then
+    return andThen(() => {
+      findWithAssert('.message-input');
+    });
+  });
+
 });
