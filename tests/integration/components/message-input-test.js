@@ -3,7 +3,7 @@ import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 
-describe('Integration | Component | message input', function() {
+describe('Integration | Component | Message input', function() {
   setupComponentTest('message-input', {
     integration: true
   });

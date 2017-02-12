@@ -5,7 +5,7 @@ import destroyApp from '../helpers/destroy-app';
 
 let application;
 
-describe('basic acceptance test', function() {
+describe('Acceptance | Page | messages', function () {
 
   beforeEach(function () {
     application = startApp();
@@ -15,33 +15,34 @@ describe('basic acceptance test', function() {
     destroyApp(application);
   });
 
-  it('can visit /', function() {
-    // when
+  beforeEach(function () {
     visit('/');
+  });
 
-    // then
-    return andThen(() => {
-      expect(currentURL()).to.equal('/');
-    });
+  it('can visit /', function () {
+    expect(currentURL()).to.equal('/');
   });
 
   it('should render the message list', function () {
-    // when
-    visit('/');
-
-    // then
-    return andThen(() => {
-      findWithAssert('.message-list');
-    });
+    findWithAssert('.message-list');
   });
 
   it('should render the message input', function () {
+    findWithAssert('.message-input');
+  });
+
+  it('should update message list when message input is submitted', function () {
+    // given
+    const $messagesLength = find('.message-item').length;
+    const messageContent = 'Some message content';
+
     // when
-    visit('/');
+    fillIn('.message-input__field', messageContent);
+    keyEvent('.message-input__field', 'keyup', '13');
 
     // then
-    return andThen(() => {
-      findWithAssert('.message-input');
+    andThen(() => {
+      expect(find('.message-item')).to.have.length($messagesLength + 1);
     });
   });
 

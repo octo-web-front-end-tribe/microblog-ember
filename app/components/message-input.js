@@ -6,7 +6,7 @@ export default Ember.Component.extend({
 
   actions: {
     submitMessage() {
-      this.get('onSubmit')(this.get('content'));
+      this.sendAction('onSubmit', this.get('content'));
       this.set('content', null);
     }
   }

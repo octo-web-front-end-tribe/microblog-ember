@@ -18,28 +18,9 @@ export default function () {
    http://www.ember-cli-mirage.com/docs/v0.2.x/shorthands/
    */
 
-  this.namespace = '/api';
+  this.urlPrefix = 'http://localhost:3000';
+  this.namespace = 'api';
 
-  this.get('/messages', () => {
-    return [
-      { id: 1, author: 'Bruce Wayne', content: 'Message #1' },
-      { id: 2, author: 'Clark Kent', content: 'Message #2' },
-      { id: 3, author: 'Diana Prince', content: 'Message #3' }
-    ];
-  });
-
-  this.post('/messages', () => {
-    return;
-  });
-/*
-  this.post('/messages', () => {
-    return {
-      id: 4,
-      author: 'Bruce Wayne',
-      content: 'Message #4'
-    }
-  });
-*/
-
+  this.resource('messages');
 }
 

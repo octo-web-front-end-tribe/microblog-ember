@@ -4,7 +4,7 @@ import { describe, it } from 'mocha';
 import { setupComponentTest } from 'ember-mocha';
 import hbs from 'htmlbars-inline-precompile';
 
-describe('Integration | Component | message item', function() {
+describe('Integration | Component | Message item', function() {
   setupComponentTest('message-item', {
     integration: true
   });
