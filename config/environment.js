@@ -20,6 +20,8 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      apiHost:'http://localhost:3000',
+      apiNamespace: 'api'
     }
   };
 
@@ -29,7 +31,6 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.APP.apiNamespace = 'api';
   }
 
   if (environment === 'test') {
@@ -41,13 +42,10 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
-
-    ENV.APP.apiNamespace = 'api';
   }
 
   if (environment === 'production') {
-    ENV.APP.apiHost = 'https://skool-microblog.herokuapp.com';
-    ENV.APP.apiNamespace = '';
+    ENV.APP.apiHost = 'https://microblog-api.herokuapp.com';
   }
 
   return ENV;

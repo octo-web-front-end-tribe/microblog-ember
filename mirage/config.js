@@ -28,5 +28,18 @@ export default function () {
     ];
   });
 
+  this.post('/messages', () => {
+    return;
+  });
+/*
+  this.post('/messages', () => {
+    return {
+      id: 4,
+      author: 'Bruce Wayne',
+      content: 'Message #4'
+    }
+  });
+*/
+
 }
 

@@ -21,4 +21,12 @@ describe('Integration | Component | message input', function() {
     this.render(hbs`{{message-input}}`);
     expect(this.$()).to.have.length(1);
   });
+
+  it('should publish message', function () {
+    // given
+
+    // when
+
+    // then
+  });
 });

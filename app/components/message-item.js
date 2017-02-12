@@ -1,8 +1,6 @@
 import Ember from 'ember';
 
-const MessageItem = Ember.Component.extend({
-
-});
+const MessageItem = Ember.Component.extend({});
 
 MessageItem.reopenClass({
   positionalParams: ['message']

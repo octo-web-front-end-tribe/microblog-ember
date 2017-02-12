@@ -1,4 +1,4 @@
 <div class="view view--messages">
-  {{message-input}}
+  {{message-input onSubmit=(action 'publishMessage')}}
   {{message-list model}}
 </div>
