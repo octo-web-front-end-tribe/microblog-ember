@@ -2,9 +2,9 @@ import Ember from 'ember';
 
 const MessageList = Ember.Component.extend({
 
-  reverseMessages: Ember.computed('messages', function () {
+  reverseMessages: Ember.computed('messages.[]', function () {
     return this.get('messages').toArray().reverse();
-  }).property('messages.[]')
+  })
 
 });
 
