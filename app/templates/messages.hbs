@@ -1,4 +1,4 @@
 <div class="view view--messages">
-  {{message-input submitHandler="publishMessage"}}
+  {{message-input action=(route-action "publishMessage")}}
   {{message-list model}}
 </div>

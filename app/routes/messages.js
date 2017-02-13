@@ -14,9 +14,8 @@ export default Ember.Route.extend({
         author: 'J. Doe',
         content: messageContent
       });
-      message.save();
+      return message.save();
     }
   }
-
 
 });
