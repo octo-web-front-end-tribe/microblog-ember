@@ -45,8 +45,6 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.locationType = 'hash';
-    ENV.baseURL = '/microblog-ember';
     ENV.APP.apiHost = 'https://microblog-api.herokuapp.com';
   }
 
