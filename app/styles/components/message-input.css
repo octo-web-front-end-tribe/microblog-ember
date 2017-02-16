@@ -4,13 +4,13 @@
   padding: 10px;
 }
 
-.message-input__field {
+.message-input__content {
   width: 100%;
   box-sizing : border-box;
   padding: 8px 10px;
   border: 1px solid #99CDE1;
 }
 
-.message-input__field:focus {
+.message-input__content:focus {
   border-color: #56b4ef;
 }
