@@ -7,7 +7,7 @@ export default Ember.Controller.extend({
   actions: {
     publishMessage(messageContent) {
       const store = this.get('store');
-      const username = this.get('session.data.authenticated.username');
+      const username = this.get('session.data.authenticated.username') ? this.get('session.data.authenticated.username') : 'Moi';
       const message = store.createRecord('message', {
         author: username,
         content: messageContent
