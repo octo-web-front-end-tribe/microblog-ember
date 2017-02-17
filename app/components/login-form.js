@@ -5,12 +5,10 @@ export default Ember.Component.extend({
   // properties
   username: null,
 
-  // actions
-  onSubmit: null,
-
   actions: {
     submitUsername() {
-      this.get('onSubmit')(this.get('username'));
+      this.get('action')(this.get('username'));
     }
   }
+
 });

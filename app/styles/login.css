@@ -1,4 +1,4 @@
-.identification {
+.login {
   background-color: #ffffff;
   color: #8899a6;
   border-radius: 5px;
@@ -8,11 +8,11 @@
   margin-right: 10px;
 }
 
-.identification-header {
+.login-header {
   text-align: center;
 }
 
-.identification-header__logo {
+.login-header__logo {
   background-color: #ffffff;
   box-sizing: border-box;
   width: 100px;
@@ -24,15 +24,15 @@
   margin-top: -50px;
 }
 
-.identification-header__logo-image {
+.login-header__logo-image {
   width: 80px;
 }
 
-.identification-body__description {
+.login-body__description {
   padding: 6px 20px;
 }
 
-.identification-body__form {
+.login-body__form {
   text-align: center;
   padding: 20px 20px 40px;
   border-top: 1px solid #eee;

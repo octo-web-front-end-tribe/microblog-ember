@@ -1,9 +1,9 @@
-.identification-form {
+.login-form {
   width: 260px;
   display: inline-block;
 }
 
-.identification-form__username {
+.login-form__username {
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
@@ -17,11 +17,11 @@
   margin: 0 0 10px;
 }
 
-.identification-form__username:focus {
+.login-form__username:focus {
   border-color: #1da1f2;
 }
 
-.identification-form__identificate {
+.login-form__identificate {
   background-color: #1da1f2;
   color: #ffffff;
   text-decoration: none;
@@ -39,6 +39,6 @@
   padding: 11px 16px;
 }
 
-.identification-form__identificate:active {
+.login-form__identificate:active {
   background-color: #3b88c3;
 }

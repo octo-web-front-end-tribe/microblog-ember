@@ -1,11 +1,11 @@
 /* components */
-@import './components/identification-form.css';
+@import './components/login-form.css';
 @import './components/message-input.css';
 @import './components/message-item.css';
 @import './components/message-list.css';
 
 /* views */
-@import './identification.css';
+@import './login.css';
 @import './messages.css';
 
 body {

@@ -6,5 +6,4 @@ MessageItem.reopenClass({
   positionalParams: ['message']
 });
 
-
 export default MessageItem;

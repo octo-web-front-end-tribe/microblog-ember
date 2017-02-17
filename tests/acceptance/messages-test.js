@@ -5,7 +5,7 @@ import destroyApp from '../helpers/destroy-app';
 
 let application;
 
-describe('Acceptance | Page | messages', function () {
+describe.skip('Acceptance | Page | messages', function () {
 
   beforeEach(function () {
     application = startApp();
@@ -16,11 +16,11 @@ describe('Acceptance | Page | messages', function () {
   });
 
   beforeEach(function () {
-    visit('/');
+    visit('/messages');
   });
 
-  it('can visit /', function () {
-    expect(currentURL()).to.equal('/');
+  it('can visit /messages', function () {
+    expect(currentURL()).to.equal('/messages');
   });
 
   it('should render the message list', function () {
