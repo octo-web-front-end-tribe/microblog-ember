@@ -1,9 +1,15 @@
 <div class="message-list">
-  <ul class="message-list__ul">
-    {{#each reverseMessages as |message|}}
-      <li class="message-list__li">
-        {{message-item message}}
-      </li>
-    {{/each}}
-  </ul>
+  {{#if hasNoMessage}}
+    <div class="message-list__empty">
+      Aucun message n'a été publié pour le moment.
+    </div>
+  {{else}}
+    <ul class="message-list__ul">
+      {{#each reverseMessages as |message|}}
+        <li class="message-list__li">
+          {{message-item message}}
+        </li>
+      {{/each}}
+    </ul>
+  {{/if}}
 </div>

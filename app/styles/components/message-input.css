@@ -2,6 +2,8 @@
   border: 1px solid #e1e8ed;
   background-color: #E5F2F7;
   padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .message-input__content {

@@ -1,7 +1,7 @@
 .navigation-bar {
   backface-visibility: hidden;
-  border-bottom: 1px solid #e1e8ed;
-  box-shadow: 1px 0 1px rgba(0,0,0,0.05);
+  border-bottom: 1px solid #cdcdcd;
+  box-shadow: 1px 0 1px rgba(0,0,0,0.25);
   position: fixed;
   top: 0;
   right: 0;
@@ -31,7 +31,7 @@
 .navigation-bar__link {
   text-align: center;
   height: 46px;
-  border-bottom: 5px solid #0084B4;
+  border-bottom: 5px solid #0084b4;
   transition: all .15s ease-in-out;
   color: inherit;
   font-size: 13px;
@@ -51,8 +51,14 @@
   color: #0084B4;
 }
 
-
 .navigation-bar__link-label {
   margin-left: 3px;
   margin-top: 17px;
+}
+
+.navigation-bar__link-icon {
+  margin-left: 3px;
+  margin-top: 13px;
+  margin-right: 2px;
+  font-size: 20px;
 }
