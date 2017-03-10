@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
-const MessageList = Ember.Component.extend({
+export default Ember.Component.extend({
+
+  classNames: ['message-list'],
 
   hasNoMessage: Ember.computed.empty('messages'),
 
@@ -9,9 +11,3 @@ const MessageList = Ember.Component.extend({
   })
 
 });
-
-MessageList.reopenClass({
-  positionalParams: ['messages']
-});
-
-export default MessageList;

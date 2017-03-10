@@ -13,6 +13,11 @@
   justify-content: center;
 }
 
+.navigation-bar__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
 .navigation-bar__ul {
   padding: 0;
   margin: 0;
@@ -24,7 +29,6 @@
   margin: 0;
   list-style-type: none;
   height: 46px;
-  color: #66757f;
   overflow: hidden;
 }
 
@@ -33,13 +37,13 @@
   height: 46px;
   border-bottom: 5px solid #0084b4;
   transition: all .15s ease-in-out;
-  color: inherit;
   font-size: 13px;
   font-weight: 500;
   line-height: 1;
   padding: 0 14px 0 4px;
   display: flex;
   justify-content: center;
+  color: #66757f;
 }
 
 .navigation-bar__link.active {
@@ -61,4 +65,8 @@
   margin-top: 13px;
   margin-right: 2px;
   font-size: 20px;
+}
+
+.navigation-bar__link--logout {
+  border: none;
 }

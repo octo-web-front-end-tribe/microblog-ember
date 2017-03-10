@@ -3,4 +3,14 @@ import UnauthenticatedRouteMixin from 'ember-simple-auth/mixins/unauthenticated-
 
 const { Route } = Ember;
 
-export default Route.extend(UnauthenticatedRouteMixin);
+export default Route.extend(UnauthenticatedRouteMixin, {
+
+  session: Ember.inject.service('session'),
+
+  actions: {
+    identify(username) {
+      this.get('session').authenticate('authenticator:simple', username);
+    }
+  }
+
+});

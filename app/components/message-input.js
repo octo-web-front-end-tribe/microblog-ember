@@ -2,11 +2,12 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
+  classNames: ['message-input'],
+
   actions: {
     submitMessage() {
-      this.get('action')(this.get('content')).then(() => {
-        this.set('content', null);
-      });
+      this.sendAction('action', this.get('content'));
+      this.set('content', null);
     }
   }
 

@@ -1,10 +1,8 @@
-<div class="login-form">
-  <form class="login-form__form" {{action "submitUsername" on="submit"}}>
-    <div class="login-form__control">
-      {{input class="login-form__username" value=username placeholder="Votre nom d'utilisateur" autocomplete="username" autofocus="true"}}
-    </div>
-    <div class="login-form__control">
-      <button class="login-form__identificate" type="submit">S'identifier</button>
-    </div>
-  </form>
-</div>
+<form class="login-form__form" {{action "submitUsername" on="submit"}}>
+  <div class="login-form__control">
+    {{input class="login-form__username" value=username placeholder="Votre nom d'utilisateur" autocomplete="username" autofocus="true"}}
+  </div>
+  <div class="login-form__control">
+    <button class="login-form__identify" type="submit">S'identifier</button>
+  </div>
+</form>

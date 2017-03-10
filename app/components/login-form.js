@@ -2,12 +2,13 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
-  // properties
+  classNames: ['login-form'],
+
   username: null,
 
   actions: {
     submitUsername() {
-      this.get('action')(this.get('username'));
+      this.sendAction('action', this.get('username'));
     }
   }
 
